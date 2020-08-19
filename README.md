@@ -45,37 +45,29 @@ a simple YouTube client application. This app will allow users to search for vid
 
 <img src='assets/home-2.png' width='400'>
 
-- Once a user submits a search your app should replace the original `No search results` message with the results
+- Once a user submits a search app replaces the original `No search results` message with the results
 - The results are ordered in columns with **TWO** results per row
 - Display the first 8 results.
 - For each video/result display:
   - The video thumbnail image
   - The title of the video
-- Each video/result must be a link. Clicking on the video should take you to the Video page
+- Each video/result is a link. Clicking on the video will take you to the Video page
 
 ### Video Page: `/video/:id`
 
 <img src='assets/video.png' width='400'>
 
-- User should be able to access this page by any link to the specific video id
-- Shows the YouTube player to show that specific YouTube video. Use `react-youtube` for this.
+- User is able to access this page by any link to the specific video id
+- Used `react-youtube` to show that specific YouTube video.
 - Has a form below the video to submit a comment. The form will need:
   - A name input
   - A comment input
   - A submit button
-- Adding a new comment in the form and pressing submit should add the comment to the list of comments.
-- Form should check to see if user filled both files name and comment, if so allow the user to post the comment else alert the user asking to fill everything out.
-- List the comments descending from newest to oldest. Last comment should appear at the top.
-- Comments do not need to be persisted across pages or refreshes.
-  - All the comments should just be stored in state for the moment.
-  - If you refresh the page, all the comments would disappear and that is ok.
-  - If you have extra time you can use LocalStorage to persist comments for videos.
+- Adding a new comment in the form and pressing submit adds the comment to the list of comments.
+- Form checks to see if user filled both files name and comment, if so allow the user to post the comment else alert the user asking to fill everything out.
+
 
 ### About Page: `/about`
 
 - Show a header with the text **About**.
 - Show a short description about what this app is about and who developed it.
-
-## Rubric
-
-![unit4AssessmentRubric](./assets/unit4AssessmentRubric.png)
